@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="AboutUs.css">
+</head>
+<script src="AboutUs.js"></script>
+<body>
+    <div class="header">
+        <img src="Assets/Logo.png" alt="Logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Cart.html">
+                    <div class="cart-icon-container">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cartItemCount" class="cart-item-count">0</span>
+                    </div></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="banner-container">
+        <div class="banner-overlay"></div>
+        <img class="banner_image" src="Assets/AboutUs_Banner1.jpg" alt="Banner">
+        <div class="banner-content">
+            <h1 class="banner-heading">About Us</h1>
+            <p class="banner-paragraph">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DONEC AT LIGULA IN
+                LIGULA ULTRICES VULPUTATE AT AC SAPIEN. IN JUSTO NEQUE, MALESUADA LIBERO ET, LOREM IPSUM DOLOR SIT AMET,
+                CONSECTETUR ADIPISCING ELIT</p>
+            <button id="contact_button" class="banner-button">CONTACT</button>
+            <script>
+                document.getElementById('contact_button').onclick = function() {
+                    window.location.href = 'Contact.html'; // Replace with your target page URL
+                };
+            </script>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="Assets/Image_1.jpg" alt="Image 1">
+                <h3 class="image-heading">Cherry Taste</h3>
+                <p class="image-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna
+                    at</p>
+                <button class="image-button1">TRY ME NOW</button>
+            </div>
+            <div class="image-container">
+                <img src="Assets/Image_2.jpg" alt="Image 2">
+                <h3 class="image-heading">Light Vanilla</h3>
+                <p class="image-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna
+                    at</p>
+                <button class="image-button2">TRY ME NOW</button>
+            </div>
+            <div class="image-container">
+                <img src="Assets/Image_3.jpg" alt="Image 3">
+                <h3 class="image-heading">Black Cherry</h3>
+                <p class="image-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna
+                    at</p>
+                <button class="image-button3">TRY ME NOW</button>
+            </div>
+            <div class="image-container">
+                <img src="Assets/Image_4.jpg" alt="Image 4">
+                <h3 class="image-heading">Chocolate</h3>
+                <p class="image-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna
+                    at</p>
+                <button class="image-button4">TRY ME NOW</button>
+            </div>
+        </div>
+    </div>
+    <div class="services-heading">
+        <img src="Assets/cone_icon.png" alt="cone">
+        <h2>- Our Services -</h2>
+        <p>CUSTOMIZATION</p>
+        <div class="services-gallery">
+            <div class="services-container">
+                <img src="Assets/Icon_1.png" alt="Image 1">
+                <p class="services-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas
+                    magna
+                    at</p>
+            </div>
+            <div class="services-container">
+                <img src="Assets/Icon_2.png" alt="Image 2">
+                <p class="services-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas
+                    magna
+                    at</p>
+            </div>
+            <div class="services-container">
+                <img src="Assets/Icon_3.png" alt="Image 3">
+                <p class="services-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas
+                    magna
+                    at</p>
+            </div>
+            <div class="services-container">
+                <img src="Assets/Icon_4.png" alt="Image 4">
+                <p class="services-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas
+                    magna
+                    at</p>
+            </div>
+        </div>
+    </div>
+    <div class="three-sections">
+        <div class="section-container">
+            <div class="sub-section sub-section-1">
+                <div class="sub-section-content">
+                    <h2>Eis Shop</h2>
+                    <p>Avenue Marina 34568 NY (U.S)<br>+1 374 474 637<br>hello@eis.com</p>
+                </div>
+            </div>
+            <div class="sub-section sub-section-2">
+                <div class="sub-section-content">
+                    <h2>Opening Times</h2>
+                    <p>MON &nbsp; &nbsp; &nbsp;17:00 to 23:00<br>WED &nbsp; &nbsp; &nbsp;19:00 to 24:00<br>THU &nbsp;
+                        &nbsp; &nbsp; 14:00 to 18:00<br>&nbsp;FRI &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp;16:00 to 24:00<br>SUN &nbsp; &nbsp; &nbsp; &nbsp;20:00 to 04:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-container section-2">
+            <div class="section-content">
+                <h2>Promotions</h2>
+                <p class="p1">Ice Cream</p>
+                <p>ASK A QUOTE</p>
+            </div>
+        </div>
+        <div class="section-container section-3">
+            <div class="section-content">
+                <h2>Custom</h2>
+                <p class="p1">Sundae</p>
+                <p>REQUEST INFO</p>
+            </div>
+        </div>
+    </div>
+    <div class="banner2-container">
+        <div class="banner2-overlay"></div>
+        <div class="banner2-image"><img src="Assets/AboutUs_Banner2.jpg" alt="Banner2"></div>
+        <div class="banner2-sections">
+            <div class="section">
+                <h3>02</h3>
+                <p>NUMBER BAKERY</p>
+            </div>
+            <div class="section">
+                <h3>56</h3>
+                <p>FOOD MENU</p>
+            </div>
+            <div class="section">
+                <h3>73</h3>
+                <p>YEARS OF EXPERIENCE</p>
+            </div>
+            <div class="section">
+                <h3>14</h3>
+                <p>CHEFS
+                    IN KITCHEN</p>
+            </div>
+        </div>
+    </div>
+    <div class="promotion-container">
+        <img src="Assets/cone_icon.png" alt="cone">
+        <h2>- Promotion -</h2>
+        <p>CREATE YOUR OWN</p>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="Assets/pro_img_1.jpg" alt="Mint Chocolate">
+                <div class="item-details">
+                    <h3>MINT CHOCOLATE</h3>
+                    <p>Chocolate sauce, chocolate shavings oreos</p>
+                </div>
+                <div class="item-price">
+                    <p>$8.80</p>
+                    <span class="new">NEW</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Assets/pro_img_5.jpg" alt="Buttered Pecan">
+                <div class="item-details">
+                    <h3>BUTTERED PECAN</h3>
+                    <p>Crushed toffee pieces, blueberries</p>
+                </div>
+                <div class="item-price">
+                    <p>$15.80</p>
+                    <span class="sale">SALE</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Assets/pro_img_2.jpg" alt="Cookie Dough">
+                <div class="item-details">
+                    <h3>COOKIE DOUGH</h3>
+                    <p>Fresh blueberries, caramel sauce, M&Ms</p>
+                </div>
+                <div class="item-price">
+                    <p>$9.30</p>
+                    <span class="fresh">FRESH</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Assets/pro_img_6.jpg" alt="Moose Tracks">
+                <div class="item-details">
+                    <h3>MOOSE TRACKS</h3>
+                    <p>Hot fudge, mini peanut butter cups</p>
+                </div>
+                <div class="item-price">
+                    <p>$12.80</p>
+                    <span class="fresh">FRESH</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Assets/pro_img_3.jpg" alt="Cookies n' Cream">
+                <div class="item-details">
+                    <h3>COOKIES N'CREAM</h3>
+                    <p>Cookie dough, caramel sauce, sea salt</p>
+                </div>
+                <div class="item-price">
+                    <p>$5.80</p>
+                    <span class="new">NEW</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Assets/pro_img_7.jpg" alt="Dark Chocolate">
+                <div class="item-details">
+                    <h3>DARK CHOCOLATE</h3>
+                    <p>Strawberry sauce, butterscotch, sprinkles</p>
+                </div>
+                <div class="item-price">
+                    <p>$7.80</p>
+                    <span class="sale">SALE</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Assets/pro_img_4.jpg" alt="Fresh Vanilla">
+                <div class="item-details">
+                    <h3>FRESH VANILLA</h3>
+                    <p>Hot fudge, cookie crumbles, strawberries</p>
+                </div>
+                <div class="item-price">
+                    <p>$13.30</p>
+                    <span class="fresh">FRESH</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Assets/pro_img_8.jpg" alt="Choco Cookie">
+                <div class="item-details">
+                    <h3>CHOCO COOKIE</h3>
+                    <p>Chocolate sauce, peanut butter cups</p>
+                </div>
+                <div class="item-price">
+                    <p>$10.80</p>
+                    <span class="fresh">FRESH</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-overlay">
+            <div class="footer-container">
+                <div class="footer-section section1">
+                    <div class="social-media">
+                        <img src="Assets/facebook_icon.png" alt="Facebook">
+                        <img src="Assets/twitter_icon.png" alt="Twitter">
+                        <img src="Assets/insta_icon.png" alt="Instagram">
+                        <img src="Assets/youtube_icon.png" alt="YouTube">
+                        <img src="Assets/whatsapp_icon.png" alt="WhatsApp">
+                    </div>
+                    <p class="stay-tuned">STAY TUNED</p>
+                    <p class="footer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu libero
+                        elit.</p>
+                </div>
+                <div class="footer-section">
+                    <img src="Assets/footer_logo.png" alt="EIS Shop Logo" class="logo">
+                    <p class="footer-para">hallo@eistheme.com<br>+12 476 357 384</p>
+                </div>
+                <div class="footer-section section3">
+                    <ul class="footer-nav">
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="Shop.html">SHOP</a></li>
+                        <li><a href="AboutUs.html">ABOUT US</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

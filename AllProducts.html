@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>All Products</title>
+    <link rel="stylesheet" href="AllProducts.css">
+</head>
+<script src="AllProducts.js"></script>
+<body>
+    <div class="container2">
+        <img class="coneicon" src="Assets/icon-7-1.png" alt="cone">
+        <h2>- Our Flavours Range -</h2>
+        <p class="container2p">SHOP NOW</p>
+        <p class="pfilter">
+        <div class="pfilter-left">
+            <i class="material-icons" onclick="toggleFilter()">filter_alt</i>
+            <span onclick="toggleFilter()">Filter</span>
+            <i class="material-icons" onclick="toggleGridView()">grid_view</i>
+            <i class="material-icons" onclick="toggleListView()">format_list_bulleted</i>
+            <span class="productCount" id="productCount"></span>
+        </div>
+        </p>
+        <div class="filter-menu" id="filterMenu">
+            <p>Product Categories</p>
+            <ul>
+                <li><input type="checkbox" id="classic" name="category" value="Classic"><label for="classic">
+                        Classic</label></li>
+                <li><input type="checkbox" id="premium" name="category" value="Premium"><label for="premium">
+                        Premium</label></li>
+            </ul>
+            <p>Filter By Price</p>
+            <div class="range-slider" id="priceRange">
+                <div class="slider-range"></div>
+                <div class="slider-handle left" id="minHandle"></div>
+                <div class="slider-handle right" id="maxHandle"></div>
+            </div>
+            <div calss="exclusive-div"><strong>Price Range: </strong><output id="minPriceDisplay"
+                    class="price-display">$0</output> - <output id="maxPriceDisplay" class="price-display">$20</output>
+            </div>
+            <button class="btn-filter" onclick="filterProducts()">Filter</button>
+        </div>
+        <div class="products2" id="productsContainer">
+            <div class="product2" id="product1" data-category="Classic" data-price="3">
+                <img src="Assets/cherry flavour.jpg" alt="Cherry">
+                <div class="product2-name">Cherry</div>
+                <div class="product2-price cherry2">$3.00</div>
+                <div><button class="custom-button no10"
+                        onclick="openSidebar('Assets/cherry flavour.jpg', 'Cherry', '$3.00','product1')">ADD TO
+                        CART</button></div>
+            </div>
+            <div class="product2" id="product2" data-category="Classic" data-price="6.21">
+                <img src="Assets/vanilla flavour.jpg" alt="Vanilla">
+                <div class="product2-name">Vanilla</div>
+                <div class="product2-price vanilla2"><del class="before-sp">$8.00</del> $6.21</div>
+                <div><button class="custom-button no11"
+                        onclick="openSidebar('Assets/vanilla flavour.jpg', 'Vanilla', '$6.21','product2')">ADD TO
+                        CART</button></div>
+                <span class="sale-tag">Sale!</span>
+            </div>
+            <div class="product2" id="product3" data-category="Classic" data-price="4.02">
+                <img src="Assets/yogurt flavour.jpg" alt="Yogurt">
+                <div class="product2-name">Yogurt</div>
+                <div class="product2-price yogurt2">$4.02</div>
+                <div><button class="custom-button no12"
+                        onclick="openSidebar('Assets/yogurt flavour.jpg', 'Yogurt', '$4.02','product3')">ADD TO
+                        CART</button></div>
+            </div>
+            <div class="product2" id="product4" data-category="Classic" data-price="2.13">
+                <img src="Assets/cream flavour.jpg" alt="Cream">
+                <div class="product2-name">Cream</div>
+                <div class="product2-price cream2"><del class="before-sp">$6.00</del> $2.13</div>
+                <div><button class="custom-button no13"
+                        onclick="openSidebar('Assets/cream flavour.jpg', 'Cream', '$2.13','product4')">ADD TO
+                        CART</button></div>
+                <span class="sale-tag">Sale!</span>
+            </div>
+            <div class="product2" id="product5" data-category="Classic" data-price="3">
+                <img src="Assets/coco flavour.jpg" alt="Choco">
+                <div class="product2-name">Choco</div>
+                <div class="product2-price choco2">$3.00</div>
+                <div><button class="custom-button no14"
+                        onclick="openSidebar('Assets/coco flavour.jpg', 'Choco', '$3.00','product5')">ADD TO
+                        CART</button></div>
+            </div>
+            <div class="product2" id="product6" data-category="Classic" data-price="5.12">
+                <img src="Assets/melon flavour.jpg" alt="Melon">
+                <div class="product2-name">Melon</div>
+                <div class="product2-price melon2">$5.12</div>
+                <div><button class="custom-button no15"
+                        onclick="openSidebar('Assets/melon flavour.jpg', 'Melon', '$5.12','product6')">ADD TO
+                        CART</button></div>
+            </div>
+            <div class="product2" id="product7" data-category="Premium" data-price="12.05">
+                <img src="Assets/Pre1.png" alt="Cookies n Cream">
+                <div class="product2-name">Cookies'n Cream</div>
+                <div class="product2-price cream">$12.50</div>
+                <div><button class="custom-button no1"
+                        onclick="openSidebar('Assets/Pre1.png', 'Cookie', '$12.50','product7')">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product2" id="product8" data-category="Premium" data-price="12.21">
+                <img src="Assets/pre2.png" alt="Chocolate Ripple">
+                <div class="product2-name">Chocolate Ripple</div>
+                <div class="product2-price ripple"><del class="before-sp">$16.00</del> $12.21</div>
+                <div><button class="custom-button no2"
+                        onclick="openSidebar('Assets/pre2.png', 'Ripple', '$16.00','product8')">ADD TO CART</button>
+                </div>
+                <span class="sale-tag">Sale!</span>
+            </div>
+            <div class="product2" id="product9" data-category="Premium" data-price="14.02">
+                <img src="Assets/pre3.png" alt="Cookie Dough">
+                <div class="product2-name">Cookie Dough</div>
+                <div class="product2-price dough">$14.02</div>
+                <div><button class="custom-button no3"
+                        onclick="openSidebar('Assets/pre3.png', 'Dough', '$14.02','product9')">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product2" id="product10" data-category="Premium" data-price="12.13">
+                <img src="Assets/Pre6.png" alt="Pineapple Chunk">
+                <div class="product2-name">Pineapple Chunk</div>
+                <div class="product2-price chunk"><del class="before-sp">$16.00</del> $12.13</div>
+                <div><button class="custom-button no4"
+                        onclick="openSidebar('Assets/pre6.png', 'Pine', '$12.13','product10')">ADD TO CART</button>
+                </div>
+                <span class="sale-tag">Sale!</span>
+            </div>
+            <div class="product2" id="product11" data-category="Premium" data-price="13">
+                <img src="Assets/pre5.png" alt="Half Gallon">
+                <div class="product2-name">Half Gallon</div>
+                <div class="product2-price Gallon">$13.00</div>
+                <div><button class="custom-button no5"
+                        onclick="openSidebar('Assets/pre5.png', 'Gallon', '$13.00','product11')">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product2" id="product12" data-category="Premium" data-price="15.12">
+                <img src="Assets/pre4.png" alt="Butter Ripple">
+                <div class="product2-name">Butter Ripple</div>
+                <div class="product2-price butter">$15.12</div>
+                <div><button class="custom-button no6"
+                        onclick="openSidebar('Assets/pre4.png', 'Butter', '$15.12','product12')">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product2" id="product13" data-category="Premium" data-price="2.13">
+                <img src="Assets/Pre7.png" alt="Banana Split">
+                <div class="product2-name">Banana Split</div>
+                <div class="product2-price split"><del class="before-sp">$6.00</del> $2.13</div>
+                <div><button class="custom-button no7"
+                        onclick="openSidebar('Assets/pre7.png', 'Banana', '$2.13','product13')">ADD TO CART</button>
+                </div>
+                <span class="sale-tag">Sale!</span>
+            </div>
+            <div class="product2" id="product14" data-category="Premium" data-price="3">
+                <img src="Assets/pre4.png" alt="Caramel Sundae">
+                <div class="product2-name">Caramel Sundae</div>
+                <div class="product2-price caramel">$3.00</div>
+                <div><button class="custom-button no8"
+                        onclick="openSidebar('Assets/pre4.png', 'Caramel', '$3.00','product14')">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product2" id="product15" data-category="Premium" data-price="5.12">
+                <img src="Assets/pre9.png" alt="Chocolate Sundae">
+                <div class="product2-name">Chocolate Sundae</div>
+                <div class="product2-price sundae">$5.12</div>
+                <div><button class="custom-button no9"
+                        onclick="openSidebar('Assets/pre9.png', 'Chocolate', '$5.12','product15')">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The overlay -->
+    <div id="overlay" onclick="closeSidebar()"></div>
+    <!-- Move the subtotalContainer div here, just before the closing tag of the sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <h2>Cart</h2>
+        <div id="subtotalContainer">
+            <strong>Subtotal: </strong> $<span id="subtotal">0.00</span>
+            <div><a class="custom-button1" href="Cart.html"><button class="view-cart" onclick="viewCart()">VIEW
+                        CART</button></a></div>
+        </div>
+        <!-- Sidebar items will be appended here dynamically -->
+    </div>
+    <footer class="footer">
+        <div class="footer-overlay">
+            <div class="footer-container">
+                <div class="footer-section section1">
+                    <div class="social-media">
+                        <img src="Assets/facebook_icon.png" alt="Facebook">
+                        <img src="Assets/twitter_icon.png" alt="Twitter">
+                        <img src="Assets/insta_icon.png" alt="Instagram">
+                        <img src="Assets/youtube_icon.png" alt="YouTube">
+                        <img src="Assets/whatsapp_icon.png" alt="WhatsApp">
+                    </div>
+                    <p class="stay-tuned">STAY TUNED</p>
+                    <p class="footer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu libero
+                        elit.</p>
+                </div>
+                <div class="footer-section">
+                    <img src="Assets/footer_logo.png" alt="EIS Shop Logo" class="logo">
+                    <p class="footer-para">hallo@eistheme.com<br>+12 476 357 384</p>
+                </div>
+                <div class="footer-section section3">
+                    <ul class="footer-nav">
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="Shop.html">SHOP</a></li>
+                        <li><a href="AboutUs.html">ABOUT US</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
